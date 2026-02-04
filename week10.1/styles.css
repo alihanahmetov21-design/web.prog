@@ -1,0 +1,22 @@
+/*
+Задание 2: Работа с классами элементов
+*/
+
+.box {
+    width: 150px;
+    height: 300px;
+    background-color: green;
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+
+.highlight {
+    background-color: red;
+    width: 150px;
+    height: 300px;
+
+    display: inline-flex;
+    margin-bottom: 30px;
+
+}
