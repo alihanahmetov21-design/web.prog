@@ -1,37 +1,44 @@
-//
-//Задание 1: Изменение текста элемента
 
-let message = document.getElementById.apply("message");
-message.textContent = "Добро пожаловать в JavaScript!"
+// Задание 1: Изменение текста элемента
 
-//Задание 2: Работа с классами элементов
 
-let boxs = document.getElementsByClassName.apply("box");
- for ( let i = 0; i < boxs.length; i++) {
-    boxs[i].backgroundColor = "green"
- }
+let message = document.getElementById("message");
+message.textContent = "Добро пожаловать в JavaScript!";
 
-//Задание 3: Использование `querySelector` и `querySelectorAll`
 
-let box = document.getSelector.apply("box");
- box.textContent = "hello World!!!!"
- 
+// Задание 2: Работа с классами элементов
 
- let box = document.getSelectorAll("Box")
 
- box.array.forEach(box => {
-    box.style.backgroundColor = "Green";
-    box.style.border = "10px solid greenyellow"
-    
- });
+let boxes = document.getElementsByClassName("box");
 
- //
-//Задание 4: Поиск и выделение элементов по классу
+for (let i = 0; i < boxes.length; i++) {
+    boxes[i].style.backgroundColor = "green";
+}
 
-let highlights = document.querySelectorAll("highlight");
 
-// Әр элементке мәтін және түс беру
-highlights.forEach(p => {
-  p.textContent = "highlight"; 
-  p.style.color = "red";             
+// Задание 3: querySelector и querySelectorAll
+
+
+
+let box = document.querySelector(".box");
+box.textContent = "Hello World!!!!";
+
+
+let allBoxes = document.querySelectorAll(".box");
+
+allBoxes.forEach(item => {
+    item.style.backgroundColor = "green";
+    item.style.border = "10px solid greenyellow";
 });
+
+
+// Задание 4: Поиск элементов по классу highlight
+
+
+let highlights = document.querySelectorAll(".highlight");
+
+highlights.forEach(p => {
+    p.textContent = "highlight";
+    p.style.color = "red";
+});
+
