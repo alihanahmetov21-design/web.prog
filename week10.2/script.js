@@ -49,6 +49,6 @@ list.addEventListener("click",(event) => {
 //Задание 7: События клавиатуры
 let keyboardinput = document.querySelector("#keyboardInput");
 keyboardinput.addEventListener("keydown", (event) => {
-    console.log('event code')
+    console.log(event.code)
 
 });
